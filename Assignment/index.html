@@ -51,14 +51,17 @@
             <img src="ICONS.png" alt="icons" height="170px">  
     </Article>
     <main>
-        <div class="g1">
+        <div class="g1 hidden">
             <div class="invert"><img src="students.png" alt=""></div>
             <div ><img src="Faculty.png" alt=""></div>
             <div class="invert staff"><img src="staff.png" alt="" class="staff"></div>
             <div ><img src="patents.png" alt="" ></div>
         </div>
+        <div class="g1-mobile hidden-main">
+            <img src="mobile-view.png" alt="">
+        </div>
         <p class="research">
-            <span>RECENT RESEARCH</span>
+            <span class="cont-inner">RECENT RESEARCH</span>
             <span style="font-size: 14px;">VIEW ALL</span>
         </p>
         <Section>
@@ -82,14 +85,28 @@
                     <div class="image 8"><img src="box8.png" alt="box8"></div>
                 </div>
             </div>
+            <div class="research-grid hidden-main">
+                <div>
+                    <div class="order-1"><img src="box1.png" alt="order" ></div>
+                    <div class="order-2"><img src="box3.png" alt="order" ></div>
+                    <div class="order-3"><img src="box5.png" alt="order" ></div>
+                    <div class="order-4"><img src="box6.png" alt="order" ></div>
+                    <div class="order-5"><img src="box8.png" alt="order" ></div>
+                </div>
+                <div class="research-grid-2">
+                    <div class="order-6"><img src="box7.png" alt="order" ></div>
+                    <div class="order-7"><img src="box4.png" alt="order" ></div>
+                    <div class="order-8"><img src="box2.png" alt="order" ></div>
+                </div>
+            </div>
         </Section>
         <p class="research">
-            <span>RECENTLY GRANTED PATENTS</span>
+            <span  class="cont-inner">RECENTLY GRANTED PATENTS</span>
             <span style="font-size: 14px;">VIEW ALL</span>
         </p>
         <div class="g3">
-            <img src="leftarrow.png" alt="" height="20px" id="left-arrow">
-            <img src="grantedpatent.png" alt="grantedpatent" width="400px">
+            <img src="leftarrow.png" alt="" height="20px" id="left-arrow" >
+           <div class="g-img"> <img src="grantedpatent.png" alt="grantedpatent" width="400px" > </div>
             <div class="g-3p">
                 <h3>REAL-TIME FOG REMOVAL SYSTEM AND ITS METHOD THEREOF</h3>
                 <p>The present invention provides a visible and near-infrared band's deep learning and pixel
@@ -109,6 +126,7 @@
             <img src="arroww.png" alt="" height="20px" id="right-arrow">
         </div>
         <div class="container">
+            <h2 class="hidden-main">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</h2>
             <div class="g4">
                 <div class="g4-inner">
                     <img src="arch1.png" alt="arch1" height="140px">
@@ -131,7 +149,7 @@
                     <span>#335</span>
                 </div>
             </div>
-            <h2>IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</h2>
+            <h2 class="hidden">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</h2>
         </div>
         <div class="container2">
             <p class="research">
@@ -151,7 +169,7 @@
                 <span class="hidden-main h2">VIEW ALL</span>
             </p>
             <div class="gallery-inner">
-                <div class="yo">
+                <div class="radio-btn">
                     <label for="Thomso"><span>THOMSO</span>
                         <input type="radio" id="Thomso" name="gallery" value="gallery">
                     </label>
@@ -175,6 +193,7 @@
                     </label>
                 </div>
                 <div class="car"><img src="car.png" alt="car" ></div>
+                <p class="hidden-main ">Cognizance, the conjugation of the finest technical minds of the country is the annual technical fest of IIT Roorkee. It is a platform for your ideas to speak out loud and to promote the skills aiming to reach the pinnacle of your mind.</p>
             </div>
         </div>
         <p class="research">
@@ -207,7 +226,7 @@
         </div>
         <div class="g3">
             <img src="leftarrow.png" alt="" height="20px" id="left-arrow">
-            <img src="architectrank1.png" alt="" width="400px">
+            <div class="g-img"><img src="architectrank1.png" alt="" width="400px"></div>
             <div class="g-3p">
                 <h3>IITR’s Architecture Department ranked 1st among all colleges in India</h3>
                 <p> Department of Architecture, IIT Roorkee remains unparalleled and has maintained its position as rank
@@ -295,65 +314,68 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-item">
-            <img src="./Footer/footer-logo.png" alt="footer-logo" width="200px" height="80px" id="footer-logo">
-            <ul class="footerg-item">
-                <li>How to reach IIT Roorkee <img src="./Footer/location.png" alt="location"></li>
-                <li>+91-1332-285311 <img src="./Footer/phone.png" alt="phone"></li>
-                <li>registrar@iitr.ac.in <img src="./Footer/message.png" alt=""></li>
-                <li><img src="./Footer/contact.png" alt="" width="100px"></li>
-            </ul>
+        <div class="footer-head">
+
+            <div class="footer-item footer-item-1" id="footer-head-logo">
+                <img src="./Footer/footer-logo.png" alt="footer-logo" width="200px" height="80px" id="footer-logo">
+                <ul>
+                    <li>How to reach IIT Roorkee <img src="./Footer/location.png" alt="location"></li>
+                    <li>+91-1332-285311 <img src="./Footer/phone.png" alt="phone"></li>
+                    <li>registrar@iitr.ac.in <img src="./Footer/message.png" alt=""></li>
+                    <li><img src="./Footer/contact.png" alt="" width="100px"></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>EXPLORE</h3>
+                <ul>
+                    <li><a href="">Administration</a></li>
+                    <li><a href="">Tenders and Quotations</a></li>
+                    <li><a href="">Awards and Honours</a></li>
+                    <li><a href="">RTI</a></li>
+                    <li><a href="">Departments</a></li>
+                    <li><a href="">Industry Consultation</a></li>
+                    <li><a href="">International Students</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>RANKINGS</h3>
+                <ul>
+                    <li><a href="">NIRF</a></li>
+                    <li><a href="">ARIIA </a></li>
+                    <li><a href="">QS </a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>QUICK ACCESS</h3>
+                <ul>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">Support @IITR</a></li>
+                    <li><a href="">Intranet Portal</a></li>
+                    <li><a href="">Give Feedback</a></li>
+                    <li><a href="">Webmail</a></li>
+                    <li><a href="">Internal Complaints Commitee</a></li>
+                    <li><a href="">Book Guest House</a></li>
+                    <li>IIT Council</a></li>
+                    <li><a href="">MoE</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="">Safety</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Hindi Cell</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-item">
-            <h3>EXPLORE</h3>
-            <ul class="footer-itegm">
-                <li>Administration</li>
-                <li>Tenders and Quotations</li>
-                <li>Awards and Honours</li>
-                <li>RTI</li>
-                <li>Departments</li>
-                <li>Industry Consultation</li>
-                <li>International Students</li>
-            </ul>
-        </div>
-        <div class="footer-item">
-            <h3>RANKINGS</h3>
-            <ul class="footer-itegm">
-                <li>NIRF</li>
-                <li>ARIIA </li>
-                <li>QS </li>
-            </ul>
-        </div>
-        <div class="footer-item">
-            <h3>QUICK ACCESS</h3>
-            <ul class="footer-itegm">
-                <li>Donate</li>
-                <li>Support @IITR</li>
-                <li>Intranet Portal</li>
-                <li>Give Feedback</li>
-                <li>Webmail</li>
-                <li>Internal Complaints Commitee</li>
-                <li>Book Guest House</li>
-                <li>IIT Council</li>
-                <li>MoE</li>
-            </ul>
-        </div>
-        <div class="footer-item">
-            <h3>QUICK LINKS</h3>
-            <ul class="footer-itegm">
-                <li>Safety</li>
-                <li>Security</li>
-                <li>Hindi Cell</li>
-            </ul>
-        </div>
-        <div>
+        <div class="footer-foot">
             <ul>
-                <li>Sitemap</li>
-                <li>Privacy Policy</li>
-                <li>Accessibilty</li>
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Accessibilty</a></li>
             </ul>
             <div>
-                Made with love by:Information Management Group,IITR
+                Made with love ❤️ by:Information Management Group,IITR
             </div>
         </div>
         
